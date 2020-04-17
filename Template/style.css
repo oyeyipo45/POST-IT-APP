@@ -1,0 +1,58 @@
+body {
+ background-image: url("./img/Optimized-secondB.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ /* box-sizing: border-box;
+ margin: 0 auto; */
+}
+
+.badge-container {
+ margin: 200px 0 0 -20px;
+}
+
+.badge-primary {
+ background-color: #2196f3;
+}
+
+.form-container {
+ margin: 100px 0 0 0;
+}
+
+.form-control {
+ margin: 0 20px 0 20px;
+ width: 80%;
+}
+
+input[type="email"]::placeholder {
+ color: #000;
+ font-weight: 500;
+}
+
+input[type="password"]::placeholder {
+ color: #000;
+ font-weight: 500;
+}
+
+.h6 {
+ text-align: center;
+ margin: 30px 0 30px 0;
+}
+
+.btn {
+ display: block;
+ margin: 0 10px;
+ width: 90%;
+ background-color: #1464ff;
+ margin: 20px 20px;
+}
+
+
+.button-container {
+ text-align: center;
+ margin: 20px 0 0 0;
+}
+
+
+/* #2196f3 */
+
+/* #1464ff */
