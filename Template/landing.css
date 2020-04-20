@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.bg{
+  background: url('./Capstone-web.jpg') no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .bg{
+    background: url('./Capstone-mobile.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+  }
+
+  .container{
+    position: relative;
+    top: 40vh;
+  }
+  
+}
+
+
+
+
