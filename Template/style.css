@@ -13,6 +13,24 @@
   background-size: 100%;
 }
 
+.rounded-circle{
+  width: 5rem;
+  height: 5rem;
+}
+
+
+.contacts{
+  height: 10rem;
+}
+
+.col-md-3{
+  height: 100vh;
+}
+
+.card-height{
+  height: 100%;
+}
+
 
 
 @media (max-width: 768px) {
