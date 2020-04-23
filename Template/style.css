@@ -42,11 +42,20 @@
   border-radius: 10px;
 }
 
+.para-mobile {
+  font-size: 25px;
+}
+
 .textarea-container {
   position: relative;
   bottom: -420px;
 }
- @media (min-width: 768px) {
+
+.textarea-container-mobile{
+  margin: 10px 0 0 0;
+}
+
+@media (min-width: 768px) {
   .bg-center {
     background: url('./Capstone-web.jpg') no-repeat;
     width: 100%;
