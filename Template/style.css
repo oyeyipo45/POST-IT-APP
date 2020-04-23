@@ -22,7 +22,7 @@
 
 
 .groups{
-  height: 10rem;
+  height: 100%;
 }
 
 .col-md-3{
@@ -31,6 +31,10 @@
 
 .card-height{
   height: 100%;
+}
+
+.member-groups-list{
+  list-style: none;
 }
 
 @media (min-width: 768px) {
