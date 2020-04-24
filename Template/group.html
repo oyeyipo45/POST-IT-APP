@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Dashboard | POST-IT</title>
+    <title>Group | POST-IT</title>
 </head>
 
 <body>
@@ -24,49 +24,53 @@
         <main class="chat-main">
             <div class="chat-sidebar">
                 <h4 class="mb-4"><i class="fas fa-user"></i> Logged in as <strong>Pureheart20</strong></h4>
-                <h5 class="button">My Groups </h5>
 
-                <a href="group.html">
-                    <h6 id="room-name"> Football </h6>
-                </a>
-                <a href="group.html">
-                    <h6 id="room-name"> Video Games </h6>
-                </a>
-                <a href="group.html">
-                    <h6 id="room-name"> Programming </h6>
-                </a>
-                <!-- <h3 class="mt-4"><i class="fas fa-users"></i> Users</h3>
+                <h5><i class="fas fa-comments"></i> Group Name:</h5>
+                <h6 id="room-name"><strong>Football </strong></h6>
+
+                <hr>
+
+                <h4 class="mt-5"><i class="fas fa-users"></i> Members</h4>
                 <ul id="users">
                     <li><strong>Tobi</strong></li>
                     <li><strong>Emmanuel </strong></li>
                     <li><strong>Damilola </strong></li>
-                </ul> -->
+                </ul>
+                <hr>
+                <h4 class="mt-5"><i class="fas fa-users"></i> Other Users</h4>
+                <ul id="users">
+                    <li><strong>Tobi</strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                    <li><strong>Emmanuel </strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                    <li><strong>Damilola </strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                </ul>
             </div>
             <div class="chat-messages">
-                <h5><strong> Latest messages from groups you belong </strong></h5>
                 <div class="message">
-                    <p class="meta">Tobi <span>7:50 am | <a href="#"><i>Football</i></a></span></p>
+                    <p class="meta">Tobi <span>7:50 am</span></p>
                     <p class="text">
                         I love football alot.
                     </p>
                 </div>
 
                 <div class="message">
-                    <p class="meta">Emmanuel <span>7:55 am | <a href="#"><i>Video Games</i></a></span></p>
+                    <p class="meta">Emmanuel <span>7:55 am</span></p>
                     <p class="text">
                         I love video games
                     </p>
                 </div>
 
                 <div class="message">
-                    <p class="meta">Damilola <span>8:50 am | <a href="#"><i>Programming</i></a></span></p>
+                    <p class="meta">Damilola <span>8:50 am</span></p>
                     <p class="text">
                         I love programming.
                     </p>
                 </div>
 
                 <div class="message">
-                    <p class="meta">Emmanuel <span>7:50 am | <a href="#"><i>Football</i></a></span></p>
+                    <p class="meta">Emmanuel <span>7:50 am</span></p>
                     <p class="text">
                         I'm a chelsea fan
                     </p>
@@ -74,6 +78,12 @@
             </div>
         </main>
         <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                <button class="button"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+        <div class="chat-form-container mt-2">
             <p id="copyright"> copy rights 2020 </p>
         </div>
     </div>

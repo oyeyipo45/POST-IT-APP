@@ -10,29 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Welcome | POST-IT</title>
+    <title>Signup | POST-IT</title>
 </head>
 
 <body>
     <div class="join-container">
         <header class="join-header">
             <h1><i class="fas fa-smile"></i> POST-IT</h1>
-            <P>Hello there! Please login with your Username or Email </P>
+            <P>Welcome Guest! Thank you for registering. </P>
         </header>
         <main class="join-main">
-            <form action="dashboard.html">
+            <form action="index.html">
                 <div class="form-inputs">
-                    <label for="username">Username or Email</label>
-                    <input type="text" name="username" id="username" placeholder="Enter username or email..."
-                        required />
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+                </div>
+
+                <div class="form-inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email..." required />
                 </div>
 
                 <div class="form-inputs">
                     <label for="username">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter password..." required />
                 </div>
-                <button type="submit" class="button">Sign In</button>
-                <p class="mt-2">Don't have an account? <a href="signup.html">Sign Up</a> here</p>
+                <button type="submit" class="button">Sign Up</button>
+                <p class="mt-2">Already have an account? <a href="index.html">Sign In</a> here</p>
             </form>
         </main>
     </div>
