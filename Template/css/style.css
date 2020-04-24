@@ -207,6 +207,6 @@ hr {
 	}
 
 	.chat-sidebar {
-		display: none;
+        display: block;
 	}
 }
