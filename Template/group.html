@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Group | POST-IT</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-smile"></i> POST-IT</h1>
+            <!-- Button trigger modal -->
+            <button type="button" class="button" data-toggle="modal" data-target="#exampleModal">
+                Create Broadcast Group
+            </button>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h4 class="mb-4"><i class="fas fa-user"></i> Logged in as <strong>Pureheart20</strong></h4>
+
+                <h5><i class="fas fa-comments"></i> Group Name:</h5>
+                <h6 id="room-name"><strong>Football </strong></h6>
+
+                <hr>
+
+                <h4 class="mt-5"><i class="fas fa-users"></i> Members</h4>
+                <ul id="users">
+                    <li><strong>Tobi</strong></li>
+                    <li><strong>Emmanuel </strong></li>
+                    <li><strong>Damilola </strong></li>
+                </ul>
+                <hr>
+                <h4 class="mt-5"><i class="fas fa-users"></i> Other Users</h4>
+                <ul id="users">
+                    <li><strong>Tobi</strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                    <li><strong>Emmanuel </strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                    <li><strong>Damilola </strong> <span style="float: right;"><i class="fas fa-user-plus" id="add-user"
+                                data-toggle="tooltip" data-placement="bottom" title="Add user to group"></i></span></li>
+                </ul>
+            </div>
+            <div class="chat-messages">
+                <div class="message">
+                    <p class="meta">Tobi <span>7:50 am</span></p>
+                    <p class="text">
+                        I love football alot.
+                    </p>
+                </div>
+
+                <div class="message">
+                    <p class="meta">Emmanuel <span>7:55 am</span></p>
+                    <p class="text">
+                        I love video games
+                    </p>
+                </div>
+
+                <div class="message">
+                    <p class="meta">Damilola <span>8:50 am</span></p>
+                    <p class="text">
+                        I love programming.
+                    </p>
+                </div>
+
+                <div class="message">
+                    <p class="meta">Emmanuel <span>7:50 am</span></p>
+                    <p class="text">
+                        I'm a chelsea fan
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                <button class="button"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+        <div class="chat-form-container mt-2">
+            <p id="copyright"> copy rights 2020 </p>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Group Name</label>
+                            <input type="text" class="form-control" id="group-name" placeholder="Enter group name...">
+                        </div>
+                        <div class="form-inputs">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description"
+                                rows="3">Enter short group description.</textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="button" id="create-group">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
