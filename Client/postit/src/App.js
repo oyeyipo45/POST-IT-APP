@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from "./dashBoard components.js/main"
 
+import Signup from './signup/signup';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Main />
 
       </div>
+      <Index />
     </div>
   );
 }
