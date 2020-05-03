@@ -3,7 +3,7 @@ import Header from './Header'
 import Chat from './Chats/Chat'
 import Modal from './Modal'
 
-const Index = () =>(
+const Group = () =>(
   <div className="chat-container">
     <Header />
     <Chat />
@@ -11,4 +11,4 @@ const Index = () =>(
   </div>
   )
 
-export default Index;
+export default Group;
