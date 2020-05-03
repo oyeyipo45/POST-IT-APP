@@ -4,6 +4,7 @@ import "./App.css";
 import Main from "./dashBoard components.js/main";
 import Signup from "./signup/signup";
 import Group from "./grouppage components/Group";
+import Signin from './signin_components/Signin'
 
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
     <div>
       <div className="App">
         <Switch>
+          <Route path="/signin" component={Signin} />
           <Route path="/signup" component={Signup} />
           <Route path="/dashboard" component={Main} />
           <Route path="/group" component={Group} />
-          <Redirect from="/" to="/signup" />
+          <Redirect from="/" to="/signin" />
         </Switch>
       </div>
     </div>

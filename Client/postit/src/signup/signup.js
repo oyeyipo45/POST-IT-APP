@@ -19,7 +19,7 @@ export default function Signup({history}) {
       <main className="join-main">
         <form onSubmit={handleSubmit}>
           <div className="form-inputs">
-            <label for="username">Username</label>
+            <label htmlFor="username">Username</label>
             <input
               type="text"
               name="username"
@@ -30,7 +30,7 @@ export default function Signup({history}) {
           </div>
 
           <div className="form-inputs">
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
@@ -41,7 +41,7 @@ export default function Signup({history}) {
           </div>
 
           <div className="form-inputs">
-            <label for="username">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               name="password"
@@ -50,11 +50,22 @@ export default function Signup({history}) {
               required
             />
           </div>
+
+          <div className="form-inputs">
+            <label htmlFor="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              placeholder="Confirm Password..."
+              required
+            />
+          </div>
           <button type="submit" className="button">
             Sign Up
           </button>
           <p className="mt-2">
-            Already have an account? <Link to="index.html">Sign In</Link> here
+            Already have an account? <Link to="/signin">Sign In</Link> here
           </p>
         </form>
       </main>
