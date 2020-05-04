@@ -15,7 +15,7 @@ function App() {
           <Route path="/signin" component={Signin} />
           <Route path="/signup" component={Signup} />
           <Route path="/dashboard" component={Main} />
-          <Route path="/group" component={Group} />
+          <Route path="/group/:id" component={Group} />
           <Redirect from="/" to="/signin" />
         </Switch>
       </div>

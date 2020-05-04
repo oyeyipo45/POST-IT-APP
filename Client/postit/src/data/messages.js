@@ -1,4 +1,4 @@
-const messages = [
+export const messages = [
     {
         id: 1,
         sender_id: 3,
