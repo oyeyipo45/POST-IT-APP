@@ -21,6 +21,16 @@ const initialMessageState = {
             group: 'Ruby',
             text: 'Not really a fan of Ruby. It"s too old. I love the modern Javascript.'
         }
+    ],
+    groups: [
+        {
+            name: 'Ruby',
+            description: 'Ruby programming language'
+        },
+        {
+            name: 'Java',
+            description: 'Java programming language'
+        }
     ]
 };
 

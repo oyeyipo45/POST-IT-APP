@@ -28,6 +28,7 @@ export default function Chat() {
               text: msg_body
             }
           })
+          event.target.msg_text.value = '';
         }}>
           <input id="text" type="text" name="msg_text" placeholder="Enter Message" required />
           <button className="button"><i className="fas fa-paper-plane"></i> Send</button>
