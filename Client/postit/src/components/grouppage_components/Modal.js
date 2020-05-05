@@ -1,6 +1,10 @@
 import React from 'react'
+import { useDispatch } from "react-redux";
+import {ADD_GROUP} from '../../js/constants/action-types';
+
 
 export default function Modal() {
+  const dispatch = useDispatch();
   return (
     <div
       className="modal fade"
@@ -38,7 +42,7 @@ export default function Modal() {
             >
               Close
             </button>
-            <button type="button" className="button" id="create-group">Save</button>
+            <button type="submit" className="button" id="create-group">Save</button>
           </div>
         </div>
       </div>
