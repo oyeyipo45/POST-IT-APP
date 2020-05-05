@@ -44,13 +44,11 @@ const initialMessageState = {
 
 const rootReducer = (state = initialMessageState, action) => {
     if (action.type === SEND_MESSAGE) {
-        console.log('Message Sent');
         return Object.assign({}, state, {
             messages: state.messages.concat(action.payload)
         });
     };
     if (action.type === ADD_GROUP) {
-        console.log('Group Added');
         return Object.assign({}, state, {
             groups: state.groups.concat(action.payload)
         });

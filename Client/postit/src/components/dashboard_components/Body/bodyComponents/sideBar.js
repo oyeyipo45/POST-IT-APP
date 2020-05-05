@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 export default function Sidebar() {
   const groups = useSelector(state => state.groups);
-  console.log(groups)
   return (
     <div className="chat-sidebar">
       <h4 className="mb-4"><i className="fas fa-user"></i> Logged in as <strong>Pureheart20</strong></h4>
