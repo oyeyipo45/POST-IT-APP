@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Signup({history}) {
+export default function Signup({ history }) {
 
   const handleSubmit = (e) => {
-      e.preventDefault();
+    e.preventDefault();
     history.push('/dashboard')
   };
 
