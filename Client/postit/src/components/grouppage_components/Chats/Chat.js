@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from "react-redux";
 import Sidebar from './Sidebar'
 import Message from './Message'
-import SEND_MESSAGE from '../../../js/constants/action-types';
+import {SEND_MESSAGE} from '../../../js/constants/action-types';
 
 const today = new Date();
 const time = `${today.getHours()} ${today.getMinutes()}`;

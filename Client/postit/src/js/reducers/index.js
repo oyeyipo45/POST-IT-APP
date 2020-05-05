@@ -1,4 +1,5 @@
-import SEND_MESSAGE from '../constants/action-types';
+import { SEND_MESSAGE } from '../constants/action-types';
+import { ADD_GROUP } from '../constants/action-types';
 
 
 const initialMessageState = {
@@ -24,24 +25,34 @@ const initialMessageState = {
     ],
     groups: [
         {
-            name: 'Ruby',
-            description: 'Ruby programming language'
+            id: 1,
+            name: "React",
+            description: "React class for beginners",
         },
         {
-            name: 'Java',
-            description: 'Java programming language'
-        }
+            id: 2,
+            name: "Node",
+            description: "NodeJS class for beginners",
+        },
+        {
+            id: 3,
+            name: "Javascript",
+            description: "Javascript class for beginners",
+        },
     ]
 };
 
 const rootReducer = (state = initialMessageState, action) => {
     if (action.type === SEND_MESSAGE) {
-        console.log('Message Sent');
         return Object.assign({}, state, {
             messages: state.messages.concat(action.payload)
         });
     };
-
+    if (action.type === ADD_GROUP) {
+        return Object.assign({}, state, {
+            groups: state.groups.concat(action.payload)
+        });
+    };
     return state;
 };
 
