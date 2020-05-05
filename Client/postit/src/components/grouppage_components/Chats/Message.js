@@ -21,8 +21,8 @@ const Message = () => {
     return (
       <div className="chat-messages">
         {messages.map(msgs => (
-          <div className="message">
-            <p key={msgs.sender} className="meta">
+          <div key={msgs.sender} className="message">
+            <p  className="meta">
               {msgs.sender}
               <span>{msgs.sent_at} am | <a href="#0"><i>{msgs.group}</i></a></span>
             </p>
